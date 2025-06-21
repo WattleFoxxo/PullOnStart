@@ -3,9 +3,5 @@ services:
     image: ghcr.io/wattlefoxxo/pullonstart
     volumes:
       - ./data:/root/data
-    environment:
-      - GIT_PRIVIDER=${GIT_PRIVIDER}
-      - GIT_REPO=${GIT_REPO}
-      - GIT_KEY=${GIT_KEY}
-      - EXIT_WHEN_DONE=${GIT_KEY}
+    env_file: .env
     restart: no
