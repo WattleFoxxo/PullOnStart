@@ -12,6 +12,7 @@ services:
     environment:
       - GIT_PRIVIDER=<YOUR PRIVDER>
       - GIT_REPO=<YOUR REPO>
+      - GIT_BRANCH=<YOUR BRANCH> # Optional
       - GIT_KEY=<YOUR SSH PRIVATE KEY>
       - EXIT_WHEN_DONE=<true or false> # Optional
     restart: no

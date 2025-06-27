@@ -19,6 +19,10 @@ else
     git clone "$GIT_REPO" /root/data
 fi
 
+if [ -n "$GIT_BRANCH" ]; then
+    git checkout $GIT_BRANCH
+fi
+
 if [ "$EXIT_WHEN_DONE" = "true" ]; then
     exit 0
 else
